@@ -9,11 +9,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var areaOfView: UIView!
+    @IBOutlet var lableForRedColor: UILabel!
+    @IBOutlet var lableForGreenColor: UILabel!
+    @IBOutlet var lableForBlueColor: UILabel!
+    @IBOutlet var sliderForRedColor: UISlider!
+    @IBOutlet var sliderForGreenColor: UISlider!
+    @IBOutlet var sliderForBlueColor: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func actionForRedColor() {
+    }
+    
+    @IBAction func actionForGreenColor() {
+    }
+    
+    @IBAction func actionForBlueColor() {
+    }
+    
 }
 
