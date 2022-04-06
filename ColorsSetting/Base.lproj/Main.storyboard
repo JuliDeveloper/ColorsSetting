@@ -84,19 +84,19 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="R63-2B-guM">
                                                 <rect key="frame" x="-2" y="0.0" width="262.5" height="31"/>
                                                 <connections>
-                                                    <action selector="actionForRedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="GWr-cO-3Hq"/>
+                                                    <action selector="actionRedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="GWr-cO-3Hq"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2d6-kN-Hzr">
                                                 <rect key="frame" x="-2" y="70" width="262.5" height="31"/>
                                                 <connections>
-                                                    <action selector="actionForGreenColor" destination="BYZ-38-t0r" eventType="valueChanged" id="aft-uj-VtV"/>
+                                                    <action selector="actionGreenColor" destination="BYZ-38-t0r" eventType="valueChanged" id="aft-uj-VtV"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fHQ-uY-iDd">
                                                 <rect key="frame" x="-2" y="140" width="262.5" height="31"/>
                                                 <connections>
-                                                    <action selector="actionForBlueColor" destination="BYZ-38-t0r" eventType="valueChanged" id="VfO-D0-rjv"/>
+                                                    <action selector="actionBlueColor" destination="BYZ-38-t0r" eventType="valueChanged" id="VfO-D0-rjv"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -117,12 +117,12 @@
                     </view>
                     <connections>
                         <outlet property="areaOfView" destination="LDH-8j-z8Z" id="9QB-qT-eO6"/>
-                        <outlet property="lableForBlueColor" destination="3tG-ek-frB" id="v9y-JR-xBl"/>
-                        <outlet property="lableForGreenColor" destination="XVo-aq-MWh" id="nEB-lF-nbf"/>
-                        <outlet property="lableForRedColor" destination="xca-Tr-WOE" id="5FA-lx-fXw"/>
-                        <outlet property="sliderForBlueColor" destination="fHQ-uY-iDd" id="6jt-tJ-TyM"/>
-                        <outlet property="sliderForGreenColor" destination="2d6-kN-Hzr" id="11f-EL-Egr"/>
-                        <outlet property="sliderForRedColor" destination="R63-2B-guM" id="Yp3-4U-CkN"/>
+                        <outlet property="lableBlueColor" destination="3tG-ek-frB" id="v9y-JR-xBl"/>
+                        <outlet property="lableGreenColor" destination="XVo-aq-MWh" id="nEB-lF-nbf"/>
+                        <outlet property="lableRedColor" destination="xca-Tr-WOE" id="5FA-lx-fXw"/>
+                        <outlet property="sliderBlueColor" destination="fHQ-uY-iDd" id="6jt-tJ-TyM"/>
+                        <outlet property="sliderGreenColor" destination="2d6-kN-Hzr" id="11f-EL-Egr"/>
+                        <outlet property="sliderRedColor" destination="R63-2B-guM" id="Yp3-4U-CkN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
