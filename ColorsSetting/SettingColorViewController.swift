@@ -127,10 +127,6 @@ extension SettingColorViewController {
         }
     }
     
-    @objc func tapDoneToolBar() {
-        view.endEditing(true)
-    }
-    
     private func createAlertController() {
         let alert = UIAlertController(title: "Ошибка!",
                                       message: "Введите верные значения от 0.00 до 1.00",
@@ -141,6 +137,10 @@ extension SettingColorViewController {
         
         alert.addAction(buttonAlert)
         present(alert, animated: true)
+    }
+    
+    @objc func tapDoneToolBar() {
+        view.endEditing(true)
     }
 }
 
@@ -182,7 +182,7 @@ extension SettingColorViewController: UITextFieldDelegate {
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
+        let toolBar = UIToolbar()
         
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
                                             target: self,

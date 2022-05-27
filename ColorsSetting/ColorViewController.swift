@@ -13,10 +13,6 @@ protocol SettingColor {
 
 class ColorViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let settingVC = segue.destination as? SettingColorViewController {
             settingVC.delegate = self
